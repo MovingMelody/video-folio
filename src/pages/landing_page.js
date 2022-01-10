@@ -66,7 +66,7 @@ const AvatarImg = styled.img`
 
 const IntroSection = styled.section`
   display: flex;
-  min-height: 82vh;
+  min-height: 74vh;
   max-width: 820px;
   align-items: center;
   flex-direction: column;
