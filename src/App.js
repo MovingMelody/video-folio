@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
+import VideoGallery from "./pages/video_gallery";
+import LandingPage from "./pages/landing_page";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* main landing page */}
+      <LandingPage />
+      {/* video gallery page - showcasing user videos */}
+      <VideoGallery />
+      <div style={{ marginBottom: "400px" }}></div>
     </div>
   );
 }
