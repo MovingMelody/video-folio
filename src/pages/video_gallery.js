@@ -5,8 +5,10 @@ import Modal, {
   ModalHeader,
 } from "@kiwicom/orbit-components/lib/Modal";
 import styled from "styled-components";
+import React, { useState, useEffect } from "react";
 
-import { useState } from "react";
+import { fetchVideos } from "../services/fetchdata.service";
+
 export default function VideoGallery() {
   const videoSrc = [
     {
@@ -55,8 +57,34 @@ export default function VideoGallery() {
       ],
     },
   ];
+
+  // fetch videos on page init
+  useEffect(() => getVideos(), []);
+
+  const getVideos = () => {
+    setLoading(true);
+    fetchVideos().then(
+      (result) => {
+        populateDocs(result);
+      },
+      (_) => setLoading(false)
+    );
+  };
   const [showModal, setShowModal] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [videoData, setVideoData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const populateDocs = (docs) => {
+    if (docs === undefined) return setLoading(false);
+    let data = [];
+    docs.forEach((doc) => {
+      data.push({ ...doc.data(), ref: doc.ref });
+    });
+    setVideoData(() => [...data]);
+    console.log(videoData);
+    setLoading(false);
+  };
+
   return (
     <div>
       {showModal && (
@@ -78,7 +106,7 @@ export default function VideoGallery() {
         {videoSrc.map((eachService) => {
           return (
             <ItemWrapper
-              key={eachService.serviceName}
+              key={eachService.type}
               onClick={() => {
                 setCurrentIndex(videoSrc.indexOf(eachService));
                 setShowModal(true);
