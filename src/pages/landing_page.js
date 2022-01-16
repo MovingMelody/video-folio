@@ -38,7 +38,7 @@ export default function LandingPage() {
 }
 
 const HeroWrapper = styled.section`
-  height: 100vh;
+  height: 99.8vh;
   background: url(${bg_watermark}) no-repeat;
   background-position: left top;
   padding: 0;

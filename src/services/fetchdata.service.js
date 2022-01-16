@@ -6,7 +6,7 @@ export const fetchVideos = async () => {
 
   const ordersQuery = query(
     collection(db, kVideosFirestoreKey),
-    // where("active", "==", true)
+    where("active", "==", true)
   );
 
   try {

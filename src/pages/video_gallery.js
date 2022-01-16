@@ -10,70 +10,33 @@ import React, { useState, useEffect } from "react";
 import { fetchVideos } from "../services/fetchdata.service";
 
 export default function VideoGallery() {
-  const videoSrc = [
-    {
-      type: "video",
-      sources: [
-        {
-          src: "yWtFb9LJs3o",
-          provider: "youtube",
-        },
-      ],
-    },
-    {
-      type: "video",
-      sources: [
-        {
-          src: "rtASDs1pWeY",
-          provider: "youtube",
-        },
-      ],
-    },
-    {
-      type: "video",
-      sources: [
-        {
-          src: "rtASDs1pWeY",
-          provider: "youtube",
-        },
-      ],
-    },
-    {
-      type: "video",
-      sources: [
-        {
-          src: "rtASDs1pWeY",
-          provider: "youtube",
-        },
-      ],
-    },
-    {
-      type: "video",
-      sources: [
-        {
-          src: "rtASDs1pWeY",
-          provider: "youtube",
-        },
-      ],
-    },
-  ];
+  // data format
+  // const videoSrc = [
+  //   {
+  //     type: "video",
+  //     sources: [
+  //       {
+  //         src: "yWtFb9LJs3o",
+  //         provider: "youtube",
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     type: "video",
+  //     sources: [
+  //       {
+  //         src: "rtASDs1pWeY",
+  //         provider: "youtube",
+  //       },
+  //     ],
+  //   },
+  // ];
 
-  // fetch videos on page init
-  useEffect(() => getVideos(), []);
-
-  const getVideos = () => {
-    setLoading(true);
-    fetchVideos().then(
-      (result) => {
-        populateDocs(result);
-      },
-      (_) => setLoading(false)
-    );
-  };
   const [showModal, setShowModal] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [videoData, setVideoData] = useState([]);
   const [loading, setLoading] = useState(true);
+
   const populateDocs = (docs) => {
     if (docs === undefined) return setLoading(false);
     let data = [];
@@ -85,38 +48,60 @@ export default function VideoGallery() {
     setLoading(false);
   };
 
+  // fetch videos on page init
+  const getVideos = async () => {
+    setLoading(true);
+    await fetchVideos().then((result) => {
+      populateDocs(result);
+    }, setLoading(false));
+  };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(() => getVideos(), []);
+
   return (
     <div>
-      {showModal && (
-        <Modal
-          disableAnimation={true}
-          size="large"
-          onClose={() => {
-            setShowModal(false);
-          }}
-        >
-          <ModalHeader title="Awesome Video" />
-          <ModalSection>
-            <Plyr source={videoSrc[currentIndex]} autoPlay={true} />
-          </ModalSection>
-        </Modal>
+      {loading && (
+        <div>
+          <Header>Loading...</Header>
+        </div>
       )}
-      <Header>Video Work</Header>
-      <ServiesWrapper>
-        {videoSrc.map((eachService) => {
-          return (
-            <ItemWrapper
-              key={eachService.type}
-              onClick={() => {
-                setCurrentIndex(videoSrc.indexOf(eachService));
-                setShowModal(true);
+      {!loading && (
+        <div>
+          {showModal && (
+            <Modal
+              disableAnimation={false}
+              size="large"
+              fixedFooter={false}
+              onClose={() => {
+                setShowModal(false);
               }}
             >
-              <EachItem></EachItem>
-            </ItemWrapper>
-          );
-        })}
-      </ServiesWrapper>
+              <ModalHeader title={videoData[currentIndex].title} />
+              <ModalSection>
+                <Plyr source={videoData[currentIndex]} autoPlay={true} />
+              </ModalSection>
+            </Modal>
+          )}
+          <Header>Video Work</Header>
+          <ServiesWrapper>
+            {videoData.map((eachVideo) => {
+              return (
+                <ItemWrapper
+                  key={eachVideo.type}
+                  onClick={() => {
+                    setCurrentIndex(videoData.indexOf(eachVideo));
+                    setShowModal(true);
+                  }}
+                >
+                  <EachItem
+                    src={`https://img.youtube.com/vi/${eachVideo.sources[0].src}/mqdefault.jpg`}
+                  ></EachItem>
+                </ItemWrapper>
+              );
+            })}
+          </ServiesWrapper>
+        </div>
+      )}
     </div>
   );
 }
@@ -132,24 +117,27 @@ const ServiesWrapper = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 `;
 
-const EachItem = styled.div`
-  background: white;
+const EachItem = styled.img`
+  background: var(--text-primary);
   border-radius: 6px;
-  background: url("https://image.freepik.com/free-vector/flat-geometric-background_23-2148941302.jpg")
-    no-repeat;
   height: 100%;
-  opacity: 0.8;
   margin: 0 14px;
   width: 94%;
   height: 260px;
-  background-size: cover;
-  padding: 36px 26px;
+  background-size: contain;
+  transition: transform 0.5s ease;
+  ${"" /* padding: 4px; */}
+  &:hover {
+    transform: scale(1.1);
+  }
 `;
 
 const ItemWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  overflow: hidden;
+  border-radius: 6px;
 `;
 
 const Header = styled.h2`
@@ -157,7 +145,6 @@ const Header = styled.h2`
   font-size: 2.6rem;
   text-align: center;
   padding: 100px 0px 12px 0px;
-  color: #ffffff;
   justify-content: center;
   @media screen and (max-width: 480px) {
     font-size: 2rem;
