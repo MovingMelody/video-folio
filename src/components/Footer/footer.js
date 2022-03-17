@@ -8,7 +8,6 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import {
-  faChevronRight,
   faMobileAlt,
   faHome,
   faEnvelope,

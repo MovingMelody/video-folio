@@ -33,24 +33,24 @@ const ContainerWrapper = styled.div`
   ${"" /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */}
 `;
 
-const EachItem = styled.div`
-  background: #1f2c43;
-  padding: 20px 20px;
-  border-radius: 10px;
-  overflow-wrap: break-word;
-  flex-direction: column;
-  justify-self: auto;
-`;
+// const EachItem = styled.div`
+//   background: #1f2c43;
+//   padding: 20px 20px;
+//   border-radius: 10px;
+//   overflow-wrap: break-word;
+//   flex-direction: column;
+//   justify-self: auto;
+// `;
 
-const IconWrapper = styled.div`
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  height: 60px;
-  width: 60px;
-  ${"" /* border-radius: 50%; */}
-  ${"" /* background: var(--text-primary); */}
-`;
+// const IconWrapper = styled.div`
+//   padding: 10px;
+//   display: flex;
+//   justify-content: center;
+//   height: 60px;
+//   width: 60px;
+//   ${"" /* border-radius: 50%; */}
+//   ${"" /* background: var(--text-primary); */}
+// `;
 
 const Description = styled.p`
   word-wrap: break-word;
