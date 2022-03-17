@@ -8,10 +8,12 @@ function Navbar() {
       <NavBarContainer>
         {/* <img id="logoimg" src={img} width="90" alt="" /> */}
         <Logo>
-          <h2>S.</h2>
+          <h3>S.</h3>
         </Logo>
         <NavItem>HOME</NavItem>
         <NavItem>PORTFOLIO</NavItem>
+        <NavItem>GEAR</NavItem>
+        <NavItem>CONTACT</NavItem>
       </NavBarContainer>
     </div>
   );
@@ -20,21 +22,26 @@ function Navbar() {
 export default Navbar;
 const NavBarContainer = styled.div`
   display: flex;
-  max-width: 92vw;
+  ${'' /* max-width: 92vw; */}
+  padding-left:40px;
   margin: 0 auto;
+  ${'' /* background-color:#8892AF; */}
   padding-top: 20px;
+  padding-bottom: 20px;
   align-items: center;
 `;
 
 const NavItem = styled.h3`
-  margin-left: 18px;
-  font-family: "IBM Plex Mono", monospace;
-  color: var(--text-primary);
+  margin-left: 20px;
+  letter-spacing:1px;
+  font-family: "League Spartan", sans-serif;
+  ${'' /* color: var(--text-primary); */}
+  color: #fff;
 `;
 
 const Logo = styled.div`
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   border-radius: 50px;
   background: var(--primary-color);
   display: flex;

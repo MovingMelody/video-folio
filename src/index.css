@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=League+Spartan:wght@200;300&display=swap');
 :root {
   --main-color: #0b192e;
   --text-primary: #ccd6f6;
+  --text-secondary: #8892AF;
   --primary-color: #ff7764;
 }
 * {
@@ -19,6 +21,8 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -29,4 +33,10 @@ code {
   align-items: center;
   align-content: flex-start;
   justify-items: flex-start;
+}
+
+
+html {
+  scroll-behavior:smooth;
+  box-sizing: border-box;
 }
