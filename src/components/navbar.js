@@ -12,7 +12,7 @@ function Navbar() {
         </Logo>
         <NavItem>HOME</NavItem>
         <NavItem>PORTFOLIO</NavItem>
-        <NavItem>GEAR</NavItem>
+        {/* <NavItem>GEAR</NavItem> */}
         <NavItem>CONTACT</NavItem>
       </NavBarContainer>
     </div>
