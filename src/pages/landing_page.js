@@ -49,20 +49,20 @@ const HeroWrapper = styled.section`
   }
 `;
 
-const Avatar = styled.div`
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-`;
-const AvatarImg = styled.img`
-  position: relative;
-  float: right;
-  width: 720px;
-  @media screen and (max-width: 480px) {
-    width: 420px;
-  }
-`;
+// const Avatar = styled.div`
+//   width: 100%;
+//   position: absolute;
+//   bottom: 0;
+//   right: 0;
+// `;
+// const AvatarImg = styled.img`
+//   position: relative;
+//   float: right;
+//   width: 720px;
+//   @media screen and (max-width: 480px) {
+//     width: 420px;
+//   }
+// `;
 
 const IntroSection = styled.section`
   display: flex;
@@ -72,31 +72,31 @@ const IntroSection = styled.section`
   flex-direction: column;
   justify-content: center;
 `;
-const Wrap = styled.section`
-  display: flex;
-  align-items: start;
-  flex-direction: column;
-`;
+// const Wrap = styled.section`
+//   display: flex;
+//   align-items: start;
+//   flex-direction: column;
+// `;
 
-const UIText = styled.div`
-  font-weight: ${(props) => props.font};
-  color: ${(props) => props.color};
-  font-size: ${(props) => props.size};
-  letter-spacing: ${(props) => props.space};
-  @media screen and (max-width: 480px) {
-  }
-`;
+// const UIText = styled.div`
+//   font-weight: ${(props) => props.font};
+//   color: ${(props) => props.color};
+//   font-size: ${(props) => props.size};
+//   letter-spacing: ${(props) => props.space};
+//   @media screen and (max-width: 480px) {
+//   }
+// `;
 
-const Cta = styled.div`
-  width: 120px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 10px;
-  background-color: var(--primary-color);
-`;
+// const Cta = styled.div`
+//   width: 120px;
+//   height: 40px;
+//   display: flex;
+//   align-items: center;
+//   flex-direction: column;
+//   justify-content: center;
+//   margin-top: 10px;
+//   background-color: var(--primary-color);
+// `;
 
 
 // const NavBar = styled.nav`

@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import bg_watermark from "../assets/images/main-bg.jpeg";
+// import bg_watermark from "../assets/images/main-bg.jpeg";
 // import avatar from "../assets/images/avatar.png";
-import Navbar from "../components/navbar";
+// import Navbar from "../components/navbar";
 
 export default function LandingPage() {
   return (

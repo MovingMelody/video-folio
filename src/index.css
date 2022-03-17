@@ -35,6 +35,10 @@ code {
   justify-items: flex-start;
 }
 
+#logoimg{
+  border-radius: 50%;
+}
+
 
 html {
   scroll-behavior:smooth;
