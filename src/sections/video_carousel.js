@@ -2,7 +2,7 @@ import AwesomeSlider from "react-awesome-slider";
 import withAutoplay from "react-awesome-slider/dist/autoplay";
 import "react-awesome-slider/dist/styles.css";
 import bg_watermark from "../assets/images/temp.jpeg";
-import bg2 from "../assets/images/temp1.jpeg";
+import bg2 from "../assets/images/temp.jpeg";
 import styled from "styled-components";
 // import AwesomeSliderStyles from 'react-awesome-slider/src/styled/scale-out-animation.scss';
 const AutoplaySlider = withAutoplay(AwesomeSlider);

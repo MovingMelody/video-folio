@@ -55,6 +55,7 @@ export default function VideoGallery() {
       populateDocs(result);
     }, setLoading(false));
   };
+  
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => getVideos(), []);
 

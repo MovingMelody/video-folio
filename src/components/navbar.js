@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-// import img from "../assets/images/avatar.png";
+import img from "../assets/images/logo.png";
 
 function Navbar() {
   return (
     <div style={{ overflow: "hidden" }}>
       <NavBarContainer>
-        {/* <img id="logoimg" src={img} width="90" alt="" /> */}
         <Logo>
-          <h3>S.</h3>
+        <img id="logoimg" src={img} width="50" alt="" />
+          {/* <h3>S.</h3> */}
         </Logo>
         <NavItem>HOME</NavItem>
         <NavItem>PORTFOLIO</NavItem>
@@ -42,7 +42,7 @@ const NavItem = styled.h3`
 const Logo = styled.div`
   height: 40px;
   width: 40px;
-  border-radius: 50px;
+  border-radius: 100px;
   background: var(--primary-color);
   display: flex;
   align-items: center;
