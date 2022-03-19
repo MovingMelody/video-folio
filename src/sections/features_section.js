@@ -1,16 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import "./hello.css";
+import camera_icon from "../assets/images/icons/camera.png";
+import star_icon from "../assets/images/icons/star.png";
+import video_icon from "../assets/images/icons/video.png";
+
 export default function highlightsSection() {
   return (
     <ContainerWrapper>
       <EachItem>
         <IconWrapper>
-          <img
-            src="https://cdn-icons.flaticon.com/png/512/2276/premium/2276416.png?token=exp=1647389110~hmac=6ebd5a00d61d4f263ec2dbec4ebc8acc"
-            alt=""
-            width="70px"
-          />
+          <img src={camera_icon} alt="" />
         </IconWrapper>
         <HeadingText>Original & Quality Parts</HeadingText>
         <Description>
@@ -20,11 +20,7 @@ export default function highlightsSection() {
       </EachItem>
       <EachItem>
         <IconWrapper>
-          <img
-            src="https://cdn-icons.flaticon.com/png/512/3153/premium/3153346.png?token=exp=1647389504~hmac=0285d89f2fecc0143df98ef673bef040"
-            alt=""
-            width="70px"
-          />
+          <img src={video_icon} alt="" width="70px" />
         </IconWrapper>
         <HeadingText>Trusted Service</HeadingText>
         <Description>
@@ -34,11 +30,7 @@ export default function highlightsSection() {
       </EachItem>
       <EachItem>
         <IconWrapper>
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/6957/6957053.png"
-            alt=""
-            width="70px"
-          />
+          <img src={star_icon} alt="" width="70px" />
         </IconWrapper>
         <HeadingText>Lowest & Affordable Pricing</HeadingText>
         <Description>

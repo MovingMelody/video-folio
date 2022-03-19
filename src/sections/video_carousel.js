@@ -1,24 +1,28 @@
 import AwesomeSlider from "react-awesome-slider";
 import withAutoplay from "react-awesome-slider/dist/autoplay";
 import "react-awesome-slider/dist/styles.css";
-import bg_watermark from "../assets/images/temp.jpeg";
-import bg2 from "../assets/images/temp.jpeg";
+import sliderOne from "../assets/images/COVER-PG.jpg";
+import sliderTwo from "../assets/images/pg4.jpg";
+import sliderThree from "../assets/images/pg5.jpg";
+import sliderFour from "../assets/images/Puneeth-1.png";
+import sliderFive from "../assets/images/puneeth2.png";
 import styled from "styled-components";
-// import AwesomeSliderStyles from 'react-awesome-slider/src/styled/scale-out-animation.scss';
 const AutoplaySlider = withAutoplay(AwesomeSlider);
 
 export default function video_carousel() {
   return (
     <ContainerWrapper>
       <AutoplaySlider
-    //   cssModule={AwesomeSliderStyles}
         animation="cubeAnimation"
         play={true}
         cancelOnInteraction={false}
         interval={6000}
       >
-        <div data-src={bg_watermark} />
-        <div data-src={bg2} />
+        <div data-src={sliderOne} />
+        <div data-src={sliderTwo} />
+        <div data-src={sliderFour} />
+        <div data-src={sliderFive} />
+        <div data-src={sliderThree} />
       </AutoplaySlider>
     </ContainerWrapper>
   );

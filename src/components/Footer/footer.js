@@ -18,7 +18,7 @@ export default function Footer() {
       <FooterWrapper>
         <LinksCategoryWrapper>
           <LinksCategoryHeader style={{ fontSize: "2rem" }}>
-            Bharath Gowda
+            Puneeth Gowda
           </LinksCategoryHeader>
           <EachLinkItem style={{ lineHeight: "1.5rem" }}>
             <p style={{ textTransform: "capitalize" }}>
@@ -91,7 +91,7 @@ export default function Footer() {
       </FooterWrapper>
       <CopyRights>
         <p>
-          Copyright © Bharath Gowda {new Date().getFullYear()}. All Rights
+          Copyright © Puneeth Gowda {new Date().getFullYear()}. All Rights
           Reserved.
         </p>
       </CopyRights>
