@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import bg_watermark from "../assets/images/temp.jpeg";
-// import avatar from "../assets/images/avatar.png";
+import bg_watermark from "../assets/images/COVER-PG.jpg";
 import Navbar from "../components/navbar";
 
 export default function LandingPage() {
@@ -46,6 +45,8 @@ const HeroWrapper = styled.section`
   background-size: cover;
   @media screen and (max-width: 480px) {
     ${"" /* background: url(${anim}) no-repeat center center; */}
+  background-position: right;
+
   }
 `;
 

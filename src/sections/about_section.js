@@ -4,9 +4,8 @@ import "./hello.css";
 export default function aboutSection() {
   return (
     <ContainerWrapper>
-      <h1>Bharath Gowda</h1>
+      <h1>Puneeth Gowda</h1>
       <div style={{ marginTop: "14px" }}></div>
-
       <HeadingText>Cinematographer, Filmmaker, Storyteller</HeadingText>
       <div style={{ marginTop: "40px" }}></div>
       <Description>
