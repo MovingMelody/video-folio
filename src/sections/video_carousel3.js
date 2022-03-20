@@ -13,11 +13,10 @@ export default function video_carousel3() {
 }
 
 const ContainerWrapper = styled.div`
-  margin-top: 120px;
-  height: 100vh;
+  margin-top: 80px;
 `;
 const VideoWrapper = styled.video`
-  object-fit: cover;
+  object-fit: contain;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 `;
