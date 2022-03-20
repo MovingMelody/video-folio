@@ -1,5 +1,5 @@
 import "react-awesome-slider/dist/styles.css";
-import bg_video from "../assets/images/icons/videos/bg.mp4";
+import bg_video from "../assets/images/icons/videos/bg1.mp4";
 import styled from "styled-components";
 
 export default function video_carousel3() {

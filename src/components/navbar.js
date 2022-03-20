@@ -34,7 +34,7 @@ const NavBarContainer = styled.div`
 const NavItem = styled.h3`
   margin-left: 20px;
   letter-spacing:1px;
-  font-family: "League Spartan", sans-serif;
+  font-family:"Avenir";
   ${'' /* color: var(--text-primary); */}
   color: #fff;
 `;
