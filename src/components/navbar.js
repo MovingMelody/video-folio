@@ -11,7 +11,7 @@ function Navbar() {
           {/* <h3>S.</h3> */}
         </Logo>
         <NavItem>HOME</NavItem>
-        <NavItem>PORTFOLIO</NavItem>
+        {/* <NavItem>PORTFOLIO</NavItem> */}
         {/* <NavItem>GEAR</NavItem> */}
         <NavItem>CONTACT</NavItem>
       </NavBarContainer>
