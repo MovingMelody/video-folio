@@ -21,13 +21,13 @@ function App() {
         <HighlightsSection />
         <AboutSection />
       </div>
-      <div style={{ marginTop: "120px" }}></div>
+      <div style={{ marginTop: "40px" }}></div>
       <VideoSection3 />
-      <div style={{ marginBottom: "120px" }}></div>
+      <div style={{ marginBottom: "40px" }}></div>
       <VideoSection />
-      <div style={{ marginBottom: "120px" }}></div>
+      {/* <div style={{ marginBottom: "120px" }}></div> */}
       <VideoSection2 />
-      <div style={{ marginBottom: "120px" }}></div>
+      <div style={{ marginBottom: "40px" }}></div>
       <Footer />
     </div>
   );

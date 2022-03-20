@@ -6,9 +6,9 @@
   src: url('./assets/fonts/avenir_ff/AvenirLTStd-Book.otf');
 }
 :root {
-  --main-color: #0b192e;
-  --text-primary: #ccd6f6;
-  --text-secondary: #8892AF;
+  --main-color: #111111;
+  --text-primary: #ffffff;
+  --text-secondary: #999;
   --primary-color: #ff7764;
 }
 * {
