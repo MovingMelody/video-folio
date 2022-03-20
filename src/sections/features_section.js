@@ -12,30 +12,31 @@ export default function highlightsSection() {
         <IconWrapper>
           <img src={camera_icon} alt="" />
         </IconWrapper>
-        <HeadingText>3D Graphics</HeadingText>
+        <HeadingText>2D Graphics</HeadingText>
         <Description>
-          We have our own trained, professional & experienced technician. Which
-          make you comfortable to hand over your gadget to our technician.
+          Photo manipulations, Poster Designs, Logo Designs, Trending Graphic
+          Designs, Title Designs.
         </Description>
       </EachItem>
       <EachItem>
         <IconWrapper>
           <img src={video_icon} alt="" width="70px" />
         </IconWrapper>
-        <HeadingText>Trusted Service</HeadingText>
+        <HeadingText>Video Editing</HeadingText>
         <Description>
-          It provides opportunities for everyone to enjoy lowest and affordable
-          price which helps save your money upto 50%. Hurry Up! Book Now
+          Editing & Color Grading, Chroma Screen Works, Roto, Paint & Prep,
+          Composting.
         </Description>
       </EachItem>
       <EachItem>
         <IconWrapper>
           <img src={star_icon} alt="" width="70px" />
         </IconWrapper>
-        <HeadingText>Lowest & Affordable Pricing</HeadingText>
+        <HeadingText>3D Graphics</HeadingText>
         <Description>
-          We have our own trained, professional & experienced technician. Which
-          make you comfortable to hand over your gadget to our technician.
+          Title Intros, Motion Posters For Films, Stylized Environments,
+          Interior & Exterior - Visualisation, Concept art & Animation, Motion
+          Graphics.
         </Description>
       </EachItem>
     </ContainerWrapper>
@@ -57,7 +58,7 @@ const ContainerWrapper = styled.div`
 `;
 
 const EachItem = styled.div`
-  background: #1f2c43;
+  background: #333333;
   padding: 20px 20px;
   border-radius: 10px;
   overflow-wrap: break-word;
@@ -78,6 +79,6 @@ const IconWrapper = styled.div`
 const Description = styled.p`
   word-wrap: break-word;
   font-size: 1rem;
-  font-family:"Avenir";
+  font-family: "Avenir";
   color: var(--text-secondary);
 `;

@@ -26,5 +26,5 @@ export default function video_carousel2() {
 
 const ContainerWrapper = styled.div`
   margin-top: 120px;
-  height: 100vh;
+  ${'' /* height: 100vh; */}
 `;

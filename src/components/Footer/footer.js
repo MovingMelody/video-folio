@@ -9,7 +9,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faMobileAlt,
-  faHome,
+  // faHome,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 export default function Footer() {
@@ -20,14 +20,14 @@ export default function Footer() {
           <LinksCategoryHeader style={{ fontSize: "2rem" }}>
             Puneeth Gowda
           </LinksCategoryHeader>
-          <EachLinkItem style={{ lineHeight: "1.5rem" }}>
+          {/* <EachLinkItem style={{ lineHeight: "1.5rem" }}>
             <p style={{ textTransform: "capitalize" }}>
               I'm a paragraph. Click here to add
               <br />
               your own text and edit me.
               <br />
             </p>
-          </EachLinkItem>
+          </EachLinkItem> */}
           <EachLinkItem>
             <SocialMedia>
               <div style={{ paddingRight: "8px" }}>
@@ -69,7 +69,7 @@ export default function Footer() {
         <LinksCategoryWrapper></LinksCategoryWrapper>
 
         <LinksCategoryWrapper>
-          <LinksCategoryHeader>Contact Us</LinksCategoryHeader>
+          <LinksCategoryHeader>Contact Info</LinksCategoryHeader>
           <EachLinkItem>
             <FontAwesomeIcon icon={faMobileAlt} color="#ffaa19" />
             <p style={{ marginLeft: "8px" }}> +91 86609 18790</p>
@@ -81,12 +81,12 @@ export default function Footer() {
               artist@puneethgowda.com
             </p>
           </EachLinkItem>
-          <EachLinkItem>
+          {/* <EachLinkItem>
             <FontAwesomeIcon icon={faHome} color="#ffaa19" />
             <p style={{ marginLeft: "8px", textTransform: "lowercase" }}>
               Your address here
             </p>
-          </EachLinkItem>
+          </EachLinkItem> */}
         </LinksCategoryWrapper>
       </FooterWrapper>
       <CopyRights>

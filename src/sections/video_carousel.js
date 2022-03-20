@@ -15,6 +15,7 @@ export default function video_carousel() {
       <AutoplaySlider
         animation="cubeAnimation"
         play={true}
+        bullets={false}
         cancelOnInteraction={false}
         interval={6000}
       >
@@ -30,5 +31,5 @@ export default function video_carousel() {
 
 const ContainerWrapper = styled.div`
   margin-top: 120px;
-  height: 100vh;
+  ${'' /* height: 100vh; */}
 `;
