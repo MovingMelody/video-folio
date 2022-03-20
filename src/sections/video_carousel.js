@@ -4,8 +4,8 @@ import "react-awesome-slider/dist/styles.css";
 import sliderOne from "../assets/images/COVER-PG.jpg";
 import sliderTwo from "../assets/images/pg4.jpg";
 import sliderThree from "../assets/images/pg5.jpg";
-import sliderFour from "../assets/images/Puneeth-1.png";
-import sliderFive from "../assets/images/puneeth2.png";
+// import sliderFour from "../assets/images/Puneeth-1.png";
+// import sliderFive from "../assets/images/puneeth2.png";
 import styled from "styled-components";
 const AutoplaySlider = withAutoplay(AwesomeSlider);
 
@@ -20,8 +20,8 @@ export default function video_carousel() {
       >
         <div data-src={sliderOne} />
         <div data-src={sliderTwo} />
-        <div data-src={sliderFour} />
-        <div data-src={sliderFive} />
+        {/* <div data-src={sliderFour} /> */}
+        {/* <div data-src={sliderFive} /> */}
         <div data-src={sliderThree} />
       </AutoplaySlider>
     </ContainerWrapper>

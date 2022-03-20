@@ -12,7 +12,7 @@ export default function highlightsSection() {
         <IconWrapper>
           <img src={camera_icon} alt="" />
         </IconWrapper>
-        <HeadingText>Original & Quality Parts</HeadingText>
+        <HeadingText>3D Graphics</HeadingText>
         <Description>
           We have our own trained, professional & experienced technician. Which
           make you comfortable to hand over your gadget to our technician.
@@ -77,7 +77,7 @@ const IconWrapper = styled.div`
 
 const Description = styled.p`
   word-wrap: break-word;
-  font-size: 0.9rem;
-  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-family:"Avenir";
   color: var(--text-secondary);
 `;
