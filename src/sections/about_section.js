@@ -4,14 +4,23 @@ import "./hello.css";
 export default function aboutSection() {
   return (
     <ContainerWrapper>
-      <h1>Puneeth Gowda</h1>
-      <div style={{ marginTop: "14px" }}></div>
-      <HeadingText>Cinematographer, Filmmaker, Storyteller</HeadingText>
-      <div style={{ marginTop: "40px" }}></div>
+      <p
+        style={{
+          fontFamily: "Avenir",
+          textTransform: "uppercase",
+          fontSize: "30px",
+          letterSpacing: "1px",
+        }}
+      >
+        Puneeth Gowda
+      </p>
+      <div style={{ marginTop: "24px" }}></div>
+      <HeadingText>
+        Professional Film Editor & Visual Effects Artist
+      </HeadingText>
+      <div style={{ marginTop: "8px" }}></div>
       <Description>
-        I'm a paragraph. Click here to add your own text and edit me. It’s easy.
-        Just click “Edit Text” or double click me to add your own content and
-        make changes to the font.
+        Creating Stunning Graphics & Visuals in 2D & 3D
       </Description>
     </ContainerWrapper>
   );
@@ -19,7 +28,7 @@ export default function aboutSection() {
 
 const HeadingText = styled.h3`
   letter-spacing: 1px;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-family: "League Spartan", sans-serif;
   color: var(--text-primary);
 `;
@@ -54,7 +63,7 @@ const ContainerWrapper = styled.div`
 const Description = styled.p`
   word-wrap: break-word;
   font-size: 1.2rem;
-  max-width:700px;
+  max-width: 700px;
   font-family: "Poppins", sans-serif;
   color: var(--text-secondary);
 `;
